@@ -4,6 +4,8 @@ In order to guarantee the data security and stability of service, we need to
 make a plan on the backup strategy and scaling up strategy.
 
 1 Backup strategy
+
+
 All the data should be backed up automatically by the cronjob, we can create
 a cronjob on the kubernetes and backup the data of database to S3 bucket
 automatically.
