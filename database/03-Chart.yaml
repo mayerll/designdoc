@@ -1,0 +1,12 @@
+
+description: MySQL is the world's most popular open source database. With its proven performance, reliability, and ease-of-use, MySQL has become the leading choice of database for web applications of all sorts, ranging from personal websites and small online shops all the way to large-scale, high profile web operations like Facebook, Twitter, and YouTube.
+home: http://www.mysql.com
+keywords:
+- component=repo.mysql.com/yum/mysql-5.7-community/docker/x86_64/mysql-community-server-minimal-5.7.21-1.el7.x86_64.rpm
+maintainers:
+- email: test@outlook.com
+  name: Test 
+name: mysqldb
+sources:
+- https://hub.docker.com/r/mysql/mysql-server/
+version: 1.0

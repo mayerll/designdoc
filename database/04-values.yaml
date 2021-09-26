@@ -1,0 +1,16 @@
+
+image:
+  pullPolicy: IfNotPresent
+  repository: dockerregistry:5000/mysql-server
+  tag: latest
+persistence:
+  accessMode: ReadWriteOnce
+  enabled: true
+  size: 40Gi
+  storageClass: standard
+resources:
+  requests:
+    memory: 512Mi
+    cpu: 500m
+serviceType: ClusterIP
+mysqldbPassword: password
