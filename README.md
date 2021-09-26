@@ -50,16 +50,23 @@ I am editing the metric-server-deployment.yaml in order to use it without a
 certificate, add the bold lines under the volume section :
 
 $ cd metrics-server/deploy/1.8+/
+      
 $ sudo vi metrics-server-deployment.yaml
       - name: metrics-server
         image: k8s.gcr.io/metrics-server-amd64:v0.3.3
         command: # added line
           - /metric-server # added line
           - --kubelet-insecure-tls # added line
+      
 $ kubectl apply -f . 
+      
 $ kubectl -n kube-system get pods
+      
 $ kubectl top nodes
+      
 NAME       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+      
 minikube   393m         19%    1196Mi          20%
+      
 
 
