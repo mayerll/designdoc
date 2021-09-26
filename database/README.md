@@ -15,8 +15,8 @@ icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
 keywords:
 - component=repo.mysql.com/yum/mysql-5.7-community/docker/x86_64/mysql-community-server-minimal-5.7.21-1.el7.x86_64.rpm
 maintainers:
-- email: hiroshifuu@outlook.com
-  name: Feng Hao
+- email: test@outlook.com
+  name: test test
 name: mysqldb
 sources:
 - https://hub.docker.com/r/mysql/mysql-server/
