@@ -25,7 +25,7 @@ version: 1.0
 3 Edit values.yaml. You may want to specific the password, by setting mysqldbPassword: password.
 image:
   pullPolicy: IfNotPresent
-  repository: qio01:5000/mysql-server
+  repository: dockeregistry_url:5000/mysql-server
   tag: latest
 persistence:
   accessMode: ReadWriteOnce
