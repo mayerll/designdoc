@@ -6,7 +6,7 @@ $ helm create clientchart
 Modify the values.yaml and update the docker image of client and port and ENV (we use ENV to figure out the service URL and service port)etc, then run the following command: 
 $ helm install --dry-run --debug ./clientchart
 
-3 helm install --dry-run --debug ./clientchart --set service.internalPort=8080
+3 helm install --dry-run --debug ./clientchart --set service.internalPort=<service-port>  # e.g: 3000 or 8080 according to the definition of Dockerfile
 
 4 Deploy your service on the Kubernetes:
 $ helm install example ./clientchart --set service.type=NodePort
